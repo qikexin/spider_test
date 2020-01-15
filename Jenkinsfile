@@ -1,12 +1,21 @@
 pipeline {
-   agent any
+    agent any
 
-   stages {
-      stage('Hello') {
-         steps {
-            echo 'Hello World'
-            echo 'from github'
-         }
-      }
-   }
+    stages {
+        stage('Build') {
+            steps {
+                echo 'Building.. aaaaaaaaaaaaaaaaaaaa'
+            }
+        }
+        stage('Test') {
+            steps {
+                echo 'Testing.. bbbbbbbbbbbbbbb'
+            }
+        }
+        stage('Deploy') {
+            steps {
+                echo 'Deploying.... ccccccccccccccc'
+            }
+        }
+    }
 }
