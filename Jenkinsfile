@@ -4,7 +4,7 @@ pipeline {
         CC='golang'
         GITHUB_ACCESS_KEY_ID = credentials('github-id')
     }
-    parmeters {
+    parameters {
         string(name: 'Greting',defaultValue: 'hello',description: 'how should i greet the world')
     }
     stages {
