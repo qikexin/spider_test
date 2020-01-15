@@ -34,5 +34,11 @@ pipeline {
                 echo 'Deploying.... ccccccccccccccc'
             }
         }
+      
+    }
+    post {
+        success {
+            dingTalk accessToken: 'https://oapi.dingtalk.com/robot/send?access_token=4cc67d02e646aa52fbdaef4942bf379ca5317adede42a61c26a7c7877c890f39', imageUrl: '', jenkinsUrl: '', message: 'devops test', notifyPeople: ''
+        }
     }
 }
