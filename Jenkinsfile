@@ -20,6 +20,8 @@ pipeline {
                 echo "${CC}"
                 echo "${CB}"
                 echo "${GITHUB_ACCESS_KEY_ID}"
+                echo "${GITHUB_ACCESS_KEY_ID_USR}"
+                echo "${GITHUB_ACCESS_KEY_ID_PSW}"
                 sh 'printenv'
             }
         }
