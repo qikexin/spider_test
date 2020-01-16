@@ -11,7 +11,7 @@ pipeline {
         stage('Build') {
             steps {
                 echo 'Building.. aaaaaaaaaaaaaaaaaaaa'
-				echo 'from dev branch'
+		echo 'from dev branch'
                 echo "${params.Greting} world!"
             }
         }
